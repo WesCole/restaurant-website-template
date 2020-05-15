@@ -1,0 +1,63 @@
+body{
+    font-family: 'Bangers', cursive;
+    text-transform: space-between;
+    letter-spacing: 5px;
+}
+
+img{
+    height:300px;
+    width:400px;
+}
+
+
+
+.jumbotron > h1{
+    font-size:100px;
+}
+
+
+#header >.jumbotron{
+    background-image:url("imgs/head.jpg");
+    background-position: 100% 100%;
+    background-size: cover;
+    margin:0;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    height:500px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    background-color:red;
+}
+
+nav > ul > li > a:hover{
+  transition: .5s;
+  text-shadow: 2px 2px 3px white;
+}
+
+#gallery > h1{
+    text-shadow: 2px 1px 2px black;
+    font-size: 60px;
+}
+
+
+
+.card{
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.39);
+}
+
+#header2> .jumbotron{
+    margin:0;
+}
+
+#header2> .jumbotron:nth-of-type(3){
+    background-color: black;
+    color:white;
+}
+
+#header2> .jumbotron:nth-of-type(1){
+    background-color: black;
+    color:white;
+}
