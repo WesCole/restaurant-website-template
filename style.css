@@ -1,7 +1,8 @@
 body{
-    font-family: 'Bangers', cursive;
+    font-family: 'roboto', cursive;
     text-transform: space-between;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
+    background-color:rgb(26, 26, 26);
 }
 
 img{
@@ -10,26 +11,20 @@ img{
 }
 
 
-
-.jumbotron > h1{
-    font-size:100px;
-}
-
-
 #header >.jumbotron{
-    background-image:url("imgs/head.jpg");
+    background: rgba(0, 0, 0, 0.49) url("imgs/head.jpg");
     background-position: 100% 100%;
+    background-blend-mode: overlay;
     background-size: cover;
     margin:0;
-    text-shadow: 2px 2px 3px black;
     color: white;
-    height:500px;
+    height:800px;
     display: flex;
     align-items: center;
 }
 
 .navbar{
-    background-color:red;
+    background-color:rgb(255, 0, 0);
 }
 
 nav > ul > li > a:hover{
@@ -37,15 +32,36 @@ nav > ul > li > a:hover{
   text-shadow: 2px 2px 3px white;
 }
 
+#gallery{
+    background: rgba(0, 0, 0, 0.8)url("chessboard background.png");
+    background-blend-mode: overlay;
+    margin-top:0;
+}
+
 #gallery > h1{
     text-shadow: 2px 1px 2px black;
     font-size: 60px;
+    color:white;
+    padding-top:50px;
+    text-align: center;
+    text-decoration: lawngreen;
 }
 
 
 
 .card{
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.39);
+    background-color: rgb(129, 129, 129);
+}
+
+.btn{
+    background-color:black;
+    border:none;
+}
+
+.btn:hover{
+    background-color: white;
+    color:black;
 }
 
 #header2> .jumbotron{
