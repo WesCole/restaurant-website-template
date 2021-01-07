@@ -14,7 +14,8 @@ img{
     background: rgba(0, 0, 0, 0.49) url("imgs/head.jpg");
     background-attachment: fixed;
     background-blend-mode: overlay;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin:0;
     color: white;
     height:800px;
@@ -42,6 +43,7 @@ li{
     background: rgba(0, 0, 0, 0.8)url("chessboard background.png");
     background-blend-mode: overlay;
     background-attachment: fixed;
+    background-size: 100%;
     margin-top:0;
 }
 
@@ -100,6 +102,10 @@ h5, p{
     color:white;
 }
 
+@media (max-width: 1440px){
+
+}
+
 @media (max-width: 1280px){
     p{
         font-size: 2rem;
@@ -108,6 +114,11 @@ h5, p{
 @media (max-width: 1024px){
     img{
         height: 160px;
+    }
+
+    #header > .jumbotron{
+        height:500px;
+        background-attachment: scroll;
     }
 }
 
@@ -118,6 +129,10 @@ h5, p{
        overflow-x: auto;
        white-space: nowrap;
        flex-wrap: nowrap;
+   }
+
+   #header >.jumbotron{
+       height:450px;
    }
 
     #gallery > .row > col-lg-3 col-md-6 {
@@ -133,23 +148,27 @@ h5, p{
    }
 }
 
-   @media (max-width: 375px){
-       #header >.jumbotron{
-           height: 600px;
-           font-size: 1.5rem;
-           background-size: cover;
-       }
+@media (max-width: 425px){
+    #header > .jumbotron{
+        height:250px;
+    }
 
-       .display-1{
-           font-size:4rem;
+     .display-1{
+           font-size:3rem;
        }
 
        p{
            font-size: 2rem;
        }
+     p.text-center{
+         font-size: 1rem;
+     }
+}
+
+   @media (max-width: 375px){
 
        #header > .jumbotron{
-           height:450px;
+           height:230px;
        }
 
        #gallery > h1{
@@ -163,8 +182,24 @@ h5, p{
 
    @media (max-width: 320px){
        .card{
-           width: 250px;;
+           width: 250px;
        }
+
+        .display-1{
+           font-size:2rem;
+       }
+
+       p{
+           font-size: 2rem;
+       }
+      #header > .jumbotron{
+          height: 150px;
+      }
+
+      .lead.display-6.text-center{
+          font-size:.9rem;
+          letter-spacing: normal;
+      }
    }
 
    /*====== about us =======*/
@@ -173,6 +208,14 @@ h5, p{
       font-size: .5rem;
    }
 }  
+
+p.text-center{
+    color:black;
+}
+
+p.lead.display-6.text-center{
+    color:white;
+}
 
 
 footer{
